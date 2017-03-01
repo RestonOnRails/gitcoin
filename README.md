@@ -17,6 +17,14 @@ The only commits that can be pushed are ones that:
   with balance: 1; and
 - Has a SHA1 lexicographically less than the value in `difficulty.txt`.
 
+To check your solution you can use the following command to add a new remote:
+
+`git remote add solution git@gitcoin.rickre.in:gitcoin.git`
+
+and then
+
+`git push -u solution`
+
 ## Catalog
 
 - `difficulty.txt`: A strict upper bound on valid Gitcoin SHA1 values.
