@@ -17,11 +17,15 @@ The only commits that can be pushed are ones that:
   with balance: 1; and
 - Has a SHA1 lexicographically less than the value in `difficulty.txt`.
 
-To check your solution you can use the following command to add a new remote:
+To check your solution you can use the following commands to add a new remote:
 
 `git remote add solution git@gitcoin.rickre.in:gitcoin.git`
 
-and then
+Then add the ssh key:
+
+`ssh-add gitcoin`
+
+And then push:
 
 `git push -u solution`
 
@@ -34,3 +38,5 @@ and then
 - `LEDGER.txt`: The current Gitcoin balances.
 
 - `README.md`: This file.
+
+- `gitcoin`: Private SSH key to push to the test repo
